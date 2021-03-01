@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="testing.Views.JoinGroupPage"
+             Title="{Binding Title}">
+    <StackLayout>
+        <Frame BackgroundColor="#ccb3ff"
+               Padding="24">
+            <Label Text="Join Group" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="Black" 
+                   FontSize="32"/>
+        </Frame>
+        <Frame Padding="100"></Frame>
+        <Label Text="Enter Your Group Code" FontSize="Medium" />
+        <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
+        <Label Text="Enter Your Nickname" FontSize="Medium" />
+        <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
+    </StackLayout>
+</ContentPage>
