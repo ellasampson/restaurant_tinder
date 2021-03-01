@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test_app_take_2.CreateGroupPage"
+             Title="{Binding Title}">
+  
+    <StackLayout>
+        <Frame BackgroundColor="#ccb3ff"
+               Padding="24">
+            <Label Text="Create Group" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="Black" 
+                   FontSize="32"/>
+        </Frame>
+
+        <Frame BorderColor="Lavender"
+               CornerRadius="5"
+               Padding="8"
+               HorizontalOptions="Center"
+               WidthRequest="300">
+            <StackLayout>
+                <Label Text="Your Group Code"
+                       FontSize="Medium"/>
+                <BoxView Color="Lavender"
+                         HeightRequest="2"
+                         HorizontalOptions="Fill" />
+                <Label Text="EXAMPLECODE" 
+                       FontSize="30"
+                       FontAttributes="Bold"/>
+            </StackLayout>
+        </Frame>
+
+        <Button Text="Create Group" 
+                FontSize="25" 
+                BackgroundColor="LightSteelBlue" 
+                HorizontalOptions="Center" 
+                WidthRequest="220" 
+                HeightRequest="75"/>
+
+    </StackLayout>
+</ContentPage>
