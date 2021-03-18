@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:input=”clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit”
+             x:Class="test_app_take_2.ChooseFiltersPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#ccb3ff" Padding="24" CornerRadius="0">
+            <Label Text="Choose Filters" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="Black" 
+                   FontSize="32"/>
+        </Frame>
+
+        <ListView IsVisible=”true” x:Name=”ListView” RowHeight=”50″ CachingStrategy=”RecycleElement” SeparatorColor=”Transparent” BackgroundColor=”Transparent”>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <input:CheckBox Text=”Filter #1” Type=”Check” Color=”White” BoxBackgroundColor=”Black” TextColor=”White” HeightRequest=”40″
+                                CheckChanged=”checkbox_CheckChanged” BindingContext=”{Binding .}”/>
+                    </ViewCell>
+                 </DataTemplate>
+              </ListView.ItemTemplate>
+        </ListView> 
+
+        <Button Text="Create Group"
+                FontSize="25"
+                HeightRequest="110"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="{x:Type local:test_app_take_2.Views.CreateGroupPage}"  />
+    </StackLayout>
+
+</ContentPage>
