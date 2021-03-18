@@ -5,13 +5,31 @@
 
     <StackLayout>
         <Frame BackgroundColor="#ccb3ff" Padding="24" CornerRadius="0">
-            <Label Text="WELCOME TO [RESTAURANT TINDER]" HorizontalTextAlignment="Center" TextColor="Black" FontSize="32"/>
+            <Label Text="WELCOME TO [RESTAURANT TINDER]" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="Black" 
+                   FontSize="32"/>
         </Frame>
-        <Button Text="Create Group" FontSize="25" BackgroundColor="LightSteelBlue" HorizontalOptions="Center" WidthRequest="220" HeightRequest="75"/>
-        <Button Text="Join Group" FontSize="25" BackgroundColor="LightSteelBlue" HorizontalOptions="Center" WidthRequest="220" HeightRequest="75"/>
+
+        <Grid ColumnDefinitions="*,*">
+            <Button Text="Create Group"
+                    FontSize="25"
+                    HeightRequest="110"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:test_app_take_2.Views.CreateGroupPage}"  />
+            <Button Grid.Column="1"
+                    Text="Join Group"
+                    FontSize="25"
+                    HeightRequest="110"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:test_app_take_2.Views.JoinGroupPage}" />
+        </Grid>
+
         <Image Source="https://www.mintformations.co.uk/blog/wp-content/uploads/2020/05/shutterstock_583717939.jpg" />
-        <Frame BackgroundColor="#8585e0" Padding="27">
-            <Label Text="ACCEPT OUR TERMS AND CONDITIONS" FontSize="20"/>
+        <Frame BackgroundColor="#8585e0" 
+               Padding="27">
+            <Label Text="ACCEPT OUR TERMS AND CONDITIONS" 
+                   FontSize="20"/>
         </Frame>
     </StackLayout>
 
