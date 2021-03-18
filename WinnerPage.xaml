@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test_app_take_2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#ccb3ff" Padding="24" CornerRadius="0">
+            <Label Text="BEST MATCH" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="Black" 
+                   FontSize="32"/>
+        </Frame>
+      
+        <Frame BackgroundColor="LightSteelBlue" Padding="24">
+            <Label Text="Example Restaurant Name"
+                   HorizontalTextAlignment="Center"
+                    FontSize=25"/>
+       </Frame>
+
+        <Image Source="https://www.mintformations.co.uk/blog/wp-content/uploads/2020/05/shutterstock_583717939.jpg" />
+                                                                                                                   
+        <Frame BackgroundColor="LightSteelBlue" Padding="24">
+              <Label Text="Information about the restaurant"
+                     HorizontalTextAlignment="Center"
+                     FontSize="20"/>
+         </Frame>
+          
+        <Frame BackgroundColor="LightPurple" Padding="24">
+              <Label Text="#2 Choice: EXAMPLE RESTAURANT NAME"
+                     HorizontalTextAlignment="Center"
+                     FontSize="20"/>
+         </Frame>
+                                  
+         <Frame BackgroundColor="Purple" Padding="24">
+              <Label Text="#3 Choice: EXAMPLE RESTAURANT NAME"
+                     HorizontalTextAlignment="Center"
+                     FontSize="20"/>
+         </Frame>          
+          
+    </StackLayout>
+
+</ContentPage>
