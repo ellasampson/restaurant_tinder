@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test_app_take_2.ChooseRestaurantsPage"
+             Title="{Binding Title}">
+  
+    <StackLayout>
+        <Frame BackgroundColor="#ccb3ff"
+               Padding="30">
+            <Label Text="Choose Your Restaurants!"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="32"/>
+       </Frame>
+      
+        <Frame BackgroundColor="Grey"
+               Padding="24">
+            <Label Text="Swipe right for yes, left for no on each restaurant" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="Black" 
+                   FontSize="20"/>
+        </Frame>
+
+        <Image Source="https://www.mintformations.co.uk/blog/wp-content/uploads/2020/05/shutterstock_583717939.jpg" />
+
+        <Grid ColumnDefinitions="*,*">
+            <Button Grid.Column="2"
+                    Text="YES" 
+                    FontSize="25" 
+                    BackgroundColor="Green" 
+                    HorizontalOptions="Right" 
+                    WidthRequest="220" 
+                    HeightRequest="75"/>
+            <Button Grid.Column="1"
+                    Text="NO" 
+                    FontSize="25" 
+                    BackgroundColor="Green" 
+                    HorizontalOptions="Right" 
+                    WidthRequest="220" 
+                    HeightRequest="75"/>
+        </Grid>
+
+    </StackLayout>
+</ContentPage>
