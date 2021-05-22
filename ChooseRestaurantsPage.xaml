@@ -13,31 +13,40 @@
                    FontSize="32"/>
        </Frame>
       
-        <Frame BackgroundColor="Grey"
-               Padding="24">
+        <Frame BackgroundColor="LightGray"
+               Padding="18">
             <Label Text="Swipe right for yes, left for no on each restaurant" 
                    HorizontalTextAlignment="Center" 
                    TextColor="Black" 
-                   FontSize="20"/>
+                   FontSize="14"/>
         </Frame>
 
-        <Image Source="https://www.mintformations.co.uk/blog/wp-content/uploads/2020/05/shutterstock_583717939.jpg" />
+        <Frame BackgroundColor="LightBlue"
+               Padding="18">
+            <Label Text="EXAMPLE RESTAURANT NAME" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="Black" 
+                   FontSize="24"/>
+        </Frame>
+
+        <Image Source="https://cdn.5280.com/2020/03/Restaurant-Olivia-interior_Lucy-Beaugard-960x641-1.jpeg" />
 
         <Grid ColumnDefinitions="*,*">
-            <Button Grid.Column="2"
-                    Text="YES" 
-                    FontSize="25" 
-                    BackgroundColor="Green" 
-                    HorizontalOptions="Right" 
-                    WidthRequest="220" 
-                    HeightRequest="75"/>
-            <Button Grid.Column="1"
+            <Button Grid.Column="0"
                     Text="NO" 
                     FontSize="25" 
-                    BackgroundColor="Green" 
-                    HorizontalOptions="Right" 
-                    WidthRequest="220" 
+                    BackgroundColor="Red" 
+                    WidthRequest="330"
+                    HorizontalOptions="Start"
                     HeightRequest="75"/>
+            <Button Grid.Column="1"
+                    Text="YES" 
+                    FontSize="25" 
+                    BackgroundColor="Green"  
+                    WidthRequest="330"
+                    HorizontalOptions="End"
+                    HeightRequest="75"/>
+            
         </Grid>
 
     </StackLayout>
