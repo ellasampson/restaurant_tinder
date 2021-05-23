@@ -12,22 +12,21 @@
                    FontSize="32"/>
         </Frame>
 
-        <ListView IsVisible=”true” x:Name=”ListView” RowHeight=”50″ CachingStrategy=”RecycleElement” SeparatorColor=”Transparent” BackgroundColor=”Transparent”>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <input:CheckBox Text=”Filter #1” Type=”Check” Color=”White” BoxBackgroundColor=”Black” TextColor=”White” HeightRequest=”40″
-                                CheckChanged=”checkbox_CheckChanged” BindingContext=”{Binding .}”/>
-                    </ViewCell>
-                 </DataTemplate>
-              </ListView.ItemTemplate>
-        </ListView> 
+        <Button x:Name="VeganOptions"
+                Text="Vegan Options"
+                Clicked="VeganOptions_Clicked"/>
+        <Button x:Name="BlackOwned"
+                Text="Black Owned"
+                Clicked="BlackOwned_Clicked"/>
 
-        <Button Text="Create Group"
-                FontSize="25"
-                HeightRequest="110"
-                Command="{Binding NavigateCommand}"
-                CommandParameter="{x:Type local:test_app_take_2.Views.CreateGroupPage}"  />
+        <Grid>
+            <Button Grid.Column="1"
+                    Text="Continue"
+                    BackgroundColor="#ccb3ff"
+                    FontSize="25"
+                    HeightRequest="110" />
+        </Grid>
+
     </StackLayout>
 
 </ContentPage>
